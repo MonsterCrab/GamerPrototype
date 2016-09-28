@@ -1,0 +1,43 @@
+<%= render "layouts/nav" %>
+<div class="topslot">
+    <%= image_tag "Topslot Faker.png" %>
+</div>
+<div class="container">
+    <div class="artikelencontainer">
+        <div class="artikelheader">
+            ARTIKELEN
+        </div>
+        <div class="artikelen">
+            <% @artikel_days.each do |day, artikels| %>
+                <h2><%= day.strftime("%A %d %B %Y") %></h2>
+                <% for artikel in artikels %>
+                    <div class="artikel-index">
+                    <%= link_to(artikel) do %>
+                        <div class="<%= cycle("even", "odd") -%>">
+                            <%= artikel.created_at.strftime("%H:%M") %> 
+                            |
+                            <strong><%= artikel.title %></strong>
+                        </div>
+                    <% end %>
+                    </div>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+    <div class="topcontainer">
+        <div class="topheader">
+            TOP GAMES
+        </div>
+        <div class="top">
+            <% @games.each do |game| %>
+                <div class="topgame">
+                    <div class="topgamescore"><%= game.score %></div>
+                    <div class="topgametitle"><%= game.title %></div>
+                    <div class="topgamereleasedate"><%= game.release_date %></div>
+                    <div class="topgameplatform"><%= game.platform %></div>
+                    <div class="topgameimage"><%= link_to (image_tag game.image.url(:thumb)), game %></div>
+                </div>
+             <% end %>
+        </div>
+    </div>
+</div>

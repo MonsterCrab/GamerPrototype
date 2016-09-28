@@ -1,0 +1,159 @@
+// Place all the styles related to the artikel controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container{
+    width:970px;
+    margin-top: 10px;
+    margin-left: 25.5%;
+    float:left;
+    .artikelencontainer{
+        width:630px;
+            min-height: 650px;
+            box-shadow: 0 0 5px -2px;
+            background-color:white;
+            color:#be0300;
+            float:left;
+        .artikelheader{
+            height:40px;
+            background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+            text-transform: uppercase;
+            font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+            color:white;
+            text-decoration:none;
+            padding-top:20px;
+            padding-left:20px;
+        }
+        .artikelen{
+            font-size: 90%;
+            padding:20px;
+            font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+            .artikel-index {
+                .odd{
+                    background-color:white;
+                    padding:5px;
+
+                }
+                .even{
+                    background-color:#f9f9f9;
+                    border: 1px solid #ececec;
+                    padding: 5px;
+                }
+                a{
+                    text-decoration: none;
+                    color:#be0300;
+                }
+                a:hover{
+                    color:#575757;
+                }
+            }
+        }
+    }
+    .topcontainer{
+        width:310px;
+            background-color:white;
+            min-height:500px;
+            float:left;
+            box-shadow: 0 0 5px -2px;
+            margin-left:30px;
+            
+    }
+    .topheader{
+        height:40px;
+        background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+        color:white;
+        text-decoration:none;
+        padding-top:20px;
+        padding-left:20px;
+    }
+    .top{
+         padding:20px;
+         .topgame{
+             
+              border-bottom:1px solid gray;
+              width:270px;
+              height:120px;
+               .topgamescore{
+                      font-size: 150%;
+                        float: left;
+                        padding-right: 10px;
+                        margin-top: 20px;
+              }
+              .topgametitle{
+                     font-size: 100%;
+                    margin-top: 25px;
+                    float: left;
+                    width: 130px;
+                  
+                  
+              }
+              .topgameplatform{
+                font-size: 60%;
+                float: left;
+                margin-left: -129px;
+                margin-top: 70px;
+              }
+              
+              .topgamereleasedate{
+                font-size: 60%;
+                float: left;
+                margin-top: 80px;
+                margin-left: -129px;
+                  
+              }
+              .topgameimage{
+                    float: left;
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 170px;
+                    margin-top: -45px;
+              }
+         }
+    }
+}
+
+.topslot{
+    
+    margin-top: 12px;
+    margin-left: 25.5%;
+    top: 50%;
+    left: 50%;
+}
+
+.artikelpage{
+    margin-top: 12px;
+    margin-left: 25.5%;
+    top: 50%;
+    left: 50%;
+    width:650px;
+    height:600px;
+    padding:0px;
+    background-color:white;
+    box-shadow: 0 0 5px -2px;
+        .artikelheader{
+            background: #fafafa;
+            border-bottom: 1px solid #e9e9e9;
+            padding: 1.5rem 3rem .75rem;
+            .title{
+                color:#be0300;
+                font-size:200%;
+                font-family:Arial;
+            }
+        }
+        .artikelbody{
+            padding: 1.5rem 3rem .75rem;
+        
+            a{
+               text-decoration: none;
+               color:#be0300;
+            }
+            a:hover{
+               color:#575757;
+            }
+        }
+}
+
+

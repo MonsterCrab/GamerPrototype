@@ -1,0 +1,22 @@
+<%= render "layouts/nav" %>
+<div class="gamescontainer">
+    <div class="gamesheader">
+        Games
+    </div>
+    <div class="games">
+        <br>
+        <% @games.each do |game| %>
+        <div class="game">
+            <div class="gameimage">
+            <%= link_to (image_tag game.image.url(:thumb)), game %>
+            </div>
+            <div class="gametitle">
+            <%= link_to game.title, game %>
+            </div>
+            <div class="gamescore">
+            <%= link_to game.score, game %>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</div>

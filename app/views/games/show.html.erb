@@ -1,0 +1,91 @@
+<%= render "layouts/nav" %>
+<div class="gamecontainer">
+    <div class="gameheader">
+      <div class="gametitle">
+         <%= @game.title %>
+      </div>
+     <div class="image">
+      <%= image_tag @game.image.url(:medium) %>
+     </div>
+     <div class="info">
+       
+       <div class="shield">
+          <div class="imageshield">
+            <%= image_tag "shield.png" %>
+          </div>
+          <div class="score">
+            <%= @game.score %>
+         </div>
+       </div>
+       <div class="platform">
+      Platform:    
+       <%= @game.platform %>
+       </div>
+       <div class="release_date">
+          Releasedatum:
+       <%= @game.release_date %>
+       </div>
+    </div>
+      <% if user_signed_in? %>
+       <div class=buttons>
+    <%= link_to image_tag("addgame.png"), user_own_path(:id, :user_id, :game_id => @game.id), :method => :post %>
+    <%= link_to image_tag("addwish.png"),  user_wishlist_index_path(:id, :user_id, :game_id => @game.id), :method => :post %> 
+
+       </div>
+       <% end %> 
+    </div>   
+    <div class="gamedescriptioncontainer">
+       <div class="gamedescriptionheader">
+          Beschrijving
+       </div>
+       <div class="gamedescription">
+       <%= @game.description %>
+       </div>
+    </div>
+    <br>
+    <div class="gamemediacontainer">
+       <div class="gamemediaheader">
+        Media
+       </div>
+       <div class="gamemedia">
+            <div class="gamefotos">
+          <blockquote class="imgur-embed-pub" lang="en" data-id="a/Z0S7G"><a href="//imgur.com/Z0S7G"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+            </div>
+            <div class="gamevideos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wEtV0eGYmAU" frameborder="0" allowfullscreen></iframe>
+             </div>
+       </div>
+      </div>
+    <br>
+    <div class="gameartikelencontainer">
+       <div class="gameartikelenheader">
+           Relevante Artikelen
+       </div>
+       <div class="gameartikelen">
+           <a href="https://gamer-prototype-monstercrab.c9users.io/artikels/battleborn-krijgt-microtransacties">28-08-2016 - Battleborn krijgt microtransacties</a> 
+           
+        </div>
+    </div>
+    <br>
+    <div class="gameforumcontainer">
+       <div class="gameforumheader">
+        Forum
+       </div>
+       <div class="gameforum">
+          
+       </div>
+    </div>
+    <div class="gamepricecontainer">
+    <div class="gamepriceheader">
+     Aanbiedingen
+    </div>
+    <div class="gameprice">
+       
+    </div>
+    </div>
+    <div class="editgame">
+      <%= link_to "Voeg Game toe", user_own_path(:id, :user_id, :game_id => @game.id), :method => :post %>
+    <%= link_to "edit game",  edit_game_path %>  
+    </div>
+
+</div>

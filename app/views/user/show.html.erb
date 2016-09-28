@@ -1,0 +1,28 @@
+<%= render "layouts/nav" %>
+<% if user_signed_in? %>
+    <%= link_to "Settings", edit_user_registration_path %>
+    <%= link_to "New Artikel", new_artikel_path %>
+    <%= link_to "New Game", new_game_path %>
+<% end %>
+<div class="gamecollection">
+    <div class="collectionheader"><%= @user.username %>'s GameCollection</div>
+    <div class="statistics">statistics</div>
+    <div class="news">news</div>
+    <div class="games">
+        <% @own.each do |own| %>
+            <%= link_to (image_tag own.game.image.url(:thumb)), own.game %>
+            <%= link_to own.game.title, own.game %>
+            <% end %>
+            <%= link_to image_tag("trashie.png"), user_own_path(@user.own, @user.own), method: :delete %>
+        
+    </div>
+    <div class="games">
+        <% @wishlist.each do |wishlist| %>
+            <%= link_to (image_tag wishlist.game.image.url(:thumb)), wishlist.game %>
+            <%= link_to wishlist.game.title, wishlist.game %>
+            <% end %>
+            <%= link_to image_tag("trashie.png"), user_wishlist_path(@user.wishlist, @user.wishlist), method: :delete %>
+        
+    </div>
+</div>
+

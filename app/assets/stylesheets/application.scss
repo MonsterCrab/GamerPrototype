@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import 'artikel.scss';
+@import 'games.scss';
+@import 'user.scss';
+
+
+
+.header{
+    background: linear-gradient(to bottom,#4d4b4c 0,#171717 100%);
+    border-bottom: 2px solid #be0300;
+    color: #fff;
+    height: 83px;
+    width: 100%;
+    font-family: Source Sans Pro;
+        .nav{
+        padding-top:20px;
+        padding-left:10%;
+            .nav-links a{
+                float:left;
+                text-decoration:none;
+                color:#aaa;
+                padding-left:45px;
+                padding-top:15px;
+                float: left;
+                margin-left: 15rem;
+            }
+            .logo{
+               height: 50px;
+                width: 212px;
+                 float:left;
+                 padding-left:300px;
+                float: left;
+                width: 10px;
+            }
+        }
+
+        .login{
+                float: left;
+                margin-left: 100px;
+                width: 10%;
+                padding-right: 10px;
+                padding-top : 15px;
+            a {
+                text-decoration:none;
+                color:#aaa;
+                
+               
+            }
+        }
+        .search{
+                float: left;
+                 margin-left: 70px;
+                form{
+                    p{
+                        input#search{
+                                background: #0d0d0d;
+                                border: 1px solid #252525;
+                                border-radius: 3px;
+                                width: 100%;
+                                padding: 8px 10px 6px 30px;
+                                color: #fff;
+                                margin-top: -10px;
+                        }
+                    }
+                }
+        }
+}    
+
+.loginuser{
+    width: 20rem;
+    height: 320px;
+    margin-left: 50rem;
+    margin-top: 10rem;
+    background-color: white;
+    h2{
+        margin-left: 8rem;
+         padding-top: 25px;
+    }
+    .loginheader{
+    background: linear-gradient(to bottom,#4d4b4c 0,#171717 100%);
+    border-bottom: 2px solid #be0300;
+    color: #fff;
+    height: 83px;
+    width: 100%;
+    font-family: Source Sans Pro;}
+    .logindetails{
+    padding: 15px;
+    }
+}
+
+
+
+

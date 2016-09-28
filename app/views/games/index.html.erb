@@ -1,0 +1,27 @@
+<%= render "layouts/nav" %>
+<div class="gamescontainer">
+    <div class="gamesheader">
+        Gamecollectie
+    </div>
+    <div >
+     <%= link_to "New Game", new_game_path %>
+    </div>
+    <div class="games">
+        <br>
+        <% @games.each do |game| %>
+        <div class="game">
+            <div class="<%= cycle("even", "odd") -%>">
+                <div class="gameimage">
+                <%= link_to (image_tag game.image.url(:thumb)), game %>
+                </div>
+                <div class="gametitle">
+                <%= link_to game.title, game %>
+                </div>
+                <div class="gamescore">
+                <%= link_to game.score, game %>
+                </div>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</div>

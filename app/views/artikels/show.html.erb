@@ -1,0 +1,17 @@
+<%= render "layouts/nav" %>
+ <%= link_to "edit post", edit_artikel_path %>
+<div class="artikelen">
+    <div class="artikelpage">
+     <div class="artikelheader">
+           <div class="title">
+          <%= @artikel.title %>
+           </div>
+          <%= @artikel.subtitle %>
+    </div>
+        <div class="artikelbody">
+        <%= raw @artikel.description %>
+        <br>
+        <%= @artikel.platform %>
+        </div>
+    </div>
+</div>

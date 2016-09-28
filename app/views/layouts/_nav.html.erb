@@ -1,0 +1,26 @@
+<div class="header">
+    <div class="nav">
+        <div class="logo">
+            <%= link_to (image_tag "logogamer.png"), root_path %>
+        </div>
+        <div class="nav-links">
+            <%= link_to "Gamecollectie" , games_path %>
+        </div>
+    </div>
+    <div class="search">
+         <%= form_tag search_games_path, method: :get, role: "search" do %>
+         <p>
+             <%= text_field_tag :search, params[:search], placeholder: "Zoeken..."  %>
+         </p>
+         <% end %>
+    </div>
+    <div class="login">
+    <% if user_signed_in? %>
+        <%= link_to current_user.username, user_path(current_user) %>
+        <%= link_to 'Uitloggen', destroy_user_session_path, :method => :delete %>
+    <% else %>
+        <%= link_to "Inloggen",  new_user_session_path %>
+        <%= link_to 'Registreren', new_user_registration_path %>
+    <% end %>
+    </div>
+</div>

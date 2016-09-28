@@ -1,0 +1,239 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.gamescontainer{
+    margin-top: 12px;
+    margin-left: 25.5%;
+    top: 50%;
+    left: 50%;
+    width:690px;
+    min-height:600px;
+    padding:0px;
+    background-color:white;
+    box-shadow: 0px 2px 0px 5px lightgray;
+    .gamesheader{
+            height: 35px;
+            background: linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+            font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+            color: white;
+            text-decoration: none;
+            padding-top: 15px;
+            padding-left: 20px;
+    }
+    .games{
+        padding:1px;
+        min-height:200px;
+        .game{
+            
+            float:left;
+            padding:1px;
+            width:227px;
+            .even{
+              background-color:#f9f9f9;
+              border: 1px solid #ececec;
+            }
+            .odd{background-color:white;}
+            .gameimage{
+                float:left;
+            }
+            .gametitle{
+                float:left;
+                margin-left:10px;
+                font-size:100%;
+                a {
+                    text-decoration:none;
+                    color:#be0300;
+                }
+                a:hover{
+                    color:#575757;
+                }
+            }
+            .gamescore{
+                
+            padding-left: 120px;
+            padding-top: 30px;
+            font-size: 50px;
+            
+                a {
+                    text-decoration:none;
+                    color:#be0300;
+                }
+                a:hover{
+                    color:#575757;
+                }
+            }
+        }
+    }
+}
+.gamecontainer{
+         margin-top: 12px;
+    margin-left: 25.5%;
+    top: 50%;
+    left: 50%;
+    width:650px;
+    .gameheader{
+            position: relative;
+            width: 100%;
+            min-height:200px;
+            background-color:white;
+        .gametitle{
+                
+                font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+                color:black;
+                text-decoration:none;
+                padding-top:20px;
+                padding-left:20px;
+        }
+            
+        
+        .image{
+            background-color:white;
+                height: 100px;
+                width: 100px;
+                float:left;
+                padding:20px;
+        }
+        .info{
+            margin-left:5px;
+            float:left;
+            padding:25px;
+            width: 200px;
+            height: 100px;
+
+            
+        }
+        .shield{
+            margin-bottom:50px;
+            margin-left: 7em;
+            height: 89px;
+            width: 74px;
+            float:left;
+            
+            .score{
+                color: white;
+               margin-top: -73px;
+                margin-left: 0.5em;
+                font-size: 200%;
+            }
+            .imageshield{
+
+            }
+        }
+    .buttons{
+       margin-left: 100px;
+       bottom: 0;
+       position: absolute;
+        a img{ size:50%;}
+      }
+        
+    }
+
+  .gamedescriptioncontainer{
+        background-color:white;
+         box-shadow: 5px 5px 10px 1px gray;
+         min-height:10em;
+         .gamedescriptionheader{
+              height:30px;
+                background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+                font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+                color:white;
+                text-decoration:none;
+                padding-top:15px;
+                padding-left:20px;
+         }
+         .gamedescription{
+             padding:20px;
+         }
+    } 
+  .gamemediacontainer{
+        background-color:white;
+         box-shadow: 5px 5px 10px 1px gray;
+          min-height:10em;
+          .gamemediaheader{
+               height:30px;
+                background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+                font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+                color:white;
+                text-decoration:none;
+                padding-top:15px;
+                padding-left:20px;
+          }
+          .gamemedia{
+              padding:20px;
+              .gameimages{
+                .gimage{
+
+                }
+              }
+              .gamevideos{
+                  .gvideos{
+                    
+                  }
+
+              }
+          }
+    }
+  .gameartikelencontainer{
+        background-color:white;
+         box-shadow: 5px 5px 10px 1px gray;
+          min-height:10em;
+          .gameartikelenheader{
+               height:30px;
+                background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+                font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+                color:white;
+                text-decoration:none;
+                padding-top:15px;
+                padding-left:20px;
+          }
+          .gameartikelen{
+              padding:20px;
+                text-align:center;
+          }
+    }
+  .gameforumcontainer{
+     background-color:white;
+         box-shadow: 5px 5px 10px 1px gray;
+          min-height:10em;
+          width: 49%;
+          float: left;
+          .gameforumheader{
+               height:30px;
+                background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+                font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+                color:white;
+                text-decoration:none;
+                padding-top:15px;
+                padding-left:20px;
+              
+          }
+          .gameforum{
+              padding:20px;
+          }
+    }
+  .gamepricecontainer{
+        background-color:white;
+         box-shadow: 5px 5px 10px 1px gray;
+          min-height:10em;
+          width: 49%;
+          float: right;
+          .gamepriceheader{
+              height:30px;
+            background:linear-gradient(to bottom, #4d4b4c 0, #171717 100%);
+            font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif;
+            color:white;
+            text-decoration:none;
+            padding-top:15px;
+            padding-left:20px;
+          }
+          .gameprice{
+              padding:20px;
+          }
+
+    }
+  .editgame {
+      margin: 220px;
+    }
+}
